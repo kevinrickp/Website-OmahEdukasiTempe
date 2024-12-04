@@ -1,0 +1,143 @@
+/* Reset dan dasar */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #f0f8ff, #e0ffe0);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(to right, #388e3c, #81c784); /* Warna gradien yang lebih gelap */
+    color: white;
+    padding: 0.5rem 0; /* Mengurangi padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+header .logo-img {
+    width: 80px;
+    height: auto;
+}
+
+header .site-title {
+    font-size: 2rem; /* Mengurangi ukuran font judul */
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav {
+    margin-top: 1rem;
+    animation: slideIn 1.5s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Mengurangi jarak antar menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem; /* Mengurangi padding */
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #4caf50;
+    transform: scale(1.05); /* Mengurangi skala transformasi */
+}
+
+/* Gaya untuk logo media sosial */
+.social-icons {
+    display: flex;
+    justify-content: flex-end; /* Mengatur posisi ke kanan */
+    gap: 1rem; /* Jarak antar ikon */
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px; /* Ukuran logo media sosial */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+}
+
+/* Footer */
+footer {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer .contact {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+footer .contact-link {
+    display: inline-block;
+    margin: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer .contact-link:hover {
+    color: #ffeb3b;
+}
+
+footer .address {
+    margin-top: 1rem;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; /* Mengatur posisi ke tengah */
+    gap: 1rem; /* Jarak antar ikon */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

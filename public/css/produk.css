@@ -1,0 +1,87 @@
+/* Gaya untuk section produk */
+.produk-section {
+    width: 100vw; /* Pastikan lebar penuh layar */
+    margin-left: calc(-50vw + 50%); /* Atur margin untuk posisi penuh */
+    padding: 30px 0; /* Padding vertikal */
+    background: linear-gradient(to bottom, #e0f7fa, #f4f4f4); /* Full gradient */
+    text-align: center;
+}
+
+/* Gaya untuk daftar produk */
+.produk-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Gaya untuk setiap item produk */
+.produk-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* Lebar item */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produk-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk gambar produk */
+.produk-gambar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk judul */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Gaya untuk teks */
+span {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+    .produk-item {
+        width: 100%; /* Lebar penuh di layar kecil */
+    }
+}
+
+.promosi-section {
+    padding: 20px;
+    background: #e8f5e9; /* Warna latar belakang */
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promosi-section h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+.promosi-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.promosi-section .whatsapp-logo {
+    width: 50px; /* Atur ukuran logo WhatsApp */
+    margin-top: 10px;
+}

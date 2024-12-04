@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tentang-kami-section {
+    width: 100vw; /* Lebar penuh layar */
+    margin-left: calc(-50vw + 50%); /* Pastikan tidak terbatasi kontainer */
+    padding: 40px 0; /* Padding hanya vertikal */
+    background: linear-gradient(to bottom, #e0f7fa, #f4f4f4); /* Gradien full */
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.tentang-kami-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tentang-kami-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tentang-kami-gambar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tentang-kami-content p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
