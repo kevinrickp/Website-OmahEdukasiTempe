@@ -209,11 +209,11 @@ CREATE TABLE `produks` (
 --
 
 INSERT INTO `produks` (`id`, `nama_produk`, `deskripsi`, `harga`, `gambar`, `created_at`, `updated_at`) VALUES
-(6, 'Tempe Premium Zico', 'Dibuat dengan teknologi modern, higienis, dan berkualitas tinggi untuk memenuhi kebutuhan restoran, rumah makan dan masyarakat umum.', 20000.00, 'image/tempezico.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
-(7, 'Tempe Mendoan', 'Tempe setengah matang yang dirancang khusus untuk hidangan mendoan di berbagai restoran dan kafe.', 15000.00, 'image/tempemendoan.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
-(8, 'Keripik Tempe Zico', 'Cemilan renyah berbasis tempe yang cocok untuk segala usia.', 10000.00, 'image/keripiktempe.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
-(9, 'Penyedap Rasa Nabati Tempe Semangit', 'Produk inovatif yang menggabungkan rasa khas tempe semangit dengan bumbu rempah untuk melengkapi berbagai hidangan. Sangat bagus untuk masyarakat yang alergi udang dan vegetarian.', 25000.00, 'image/penyedaptempe.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
-(10, 'Tempe Bacem Zico', 'Olahan makanan khas Indonesia yang menggunakan tempe premium, bumbu rempah dan gula merah yang dimasak hingga meresap ke semua bagian tempe dan menghasilkan olahan makanan manis dan gurih.', 22000.00, 'image/tempebacem.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00');
+(6, 'Tempe Premium Zico', 'Dibuat dengan teknologi modern, higienis, dan berkualitas tinggi untuk memenuhi kebutuhan restoran, rumah makan dan masyarakat umum.', 20000.00, 'images/tempezico.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
+(7, 'Tempe Mendoan', 'Tempe setengah matang yang dirancang khusus untuk hidangan mendoan di berbagai restoran dan kafe.', 15000.00, 'images/tempemendoan.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
+(8, 'Keripik Tempe Zico', 'Cemilan renyah berbasis tempe yang cocok untuk segala usia.', 10000.00, 'images/keripiktempe.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
+(9, 'Penyedap Rasa Nabati Tempe Semangit', 'Produk inovatif yang menggabungkan rasa khas tempe semangit dengan bumbu rempah untuk melengkapi berbagai hidangan. Sangat bagus untuk masyarakat yang alergi udang dan vegetarian.', 25000.00, 'images/penyedaptempe.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00'),
+(10, 'Tempe Bacem Zico', 'Olahan makanan khas Indonesia yang menggunakan tempe premium, bumbu rempah dan gula merah yang dimasak hingga meresap ke semua bagian tempe dan menghasilkan olahan makanan manis dan gurih.', 22000.00, 'images/tempebacem.jpg', '2024-12-03 15:32:00', '2024-12-03 15:32:00');
 
 -- --------------------------------------------------------
 

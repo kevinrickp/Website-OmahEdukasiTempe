@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/') }}">
+<link rel="stylesheet" href="{{ asset('css/galeri.css') }}">
 @endsection
 
 @section('content')

@@ -1,143 +1,105 @@
-/* Reset dan dasar */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #f0f8ff, #e0ffe0);
-    color: #333;
-    overflow-x: hidden;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
+/* Header */
 header {
-    background: linear-gradient(to right, #388e3c, #81c784); /* Warna gradien yang lebih gelap */
-    color: white;
-    padding: 0.5rem 0; /* Mengurangi padding */
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    background: linear-gradient(to right, #2e7d32, #81c784);
+    padding: 1rem 2rem; /* Tambahkan padding horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header .logo-img {
-    width: 80px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 60px;
     height: auto;
 }
 
-header .site-title {
-    font-size: 2rem; /* Mengurangi ukuran font judul */
+.site-title {
+    color: white;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 0;
-    animation: fadeIn 2s ease-in-out;
 }
 
-nav {
-    margin-top: 1rem;
-    animation: slideIn 1.5s ease-out;
+.modern-nav {
+    flex-grow: 1; /* Membuat navigasi mengisi ruang yang tersedia */
+    margin-left: 2rem; /* Tambahkan jarak dari logo */
 }
 
-nav ul {
+.modern-nav ul {
+    display: flex;
+    justify-content: center; /* Pusatkan menu */
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Mengurangi jarak antar menu */
 }
 
-nav ul li a {
+.modern-nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 0.4rem 0.8rem; /* Mengurangi padding */
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, transform 0.3s;
 }
 
-nav ul li a:hover {
+.modern-nav ul li a:hover {
     background: white;
-    color: #4caf50;
-    transform: scale(1.05); /* Mengurangi skala transformasi */
+    color: #2e7d32;
+    transform: scale(1.1);
 }
 
-/* Gaya untuk logo media sosial */
-.social-icons {
+.contact-container {
     display: flex;
-    justify-content: flex-end; /* Mengatur posisi ke kanan */
-    gap: 1rem; /* Jarak antar ikon */
-    margin-top: 1rem;
+    align-items: center;
+    justify-content: flex-end; /* Pastikan elemen ada di ujung kanan */
+    gap: 0.5rem; /* Jarak antar elemen */
 }
 
-.social-icons a {
-    color: white;
-    text-decoration: none;
+.contact-icon {
+    width: 30px;
+    height: auto;
 }
 
-.social-icons img {
-    width: 30px; /* Ukuran logo media sosial */
-    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
-}
 
 /* Footer */
 footer {
-    background: #4caf50;
+    background: #2e7d32;
     color: white;
-    text-align: center;
     padding: 2rem 1rem;
+    text-align: center;
 }
 
-footer .contact {
-    margin-top: 1rem;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.address {
     font-size: 1rem;
 }
 
-footer .contact-link {
-    display: inline-block;
-    margin: 0.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-footer .contact-link:hover {
-    color: #ffeb3b;
-}
-
-footer .address {
-    margin-top: 1rem;
-}
-
-footer .social-links {
-    margin-top: 1rem;
+.social-links {
     display: flex;
-    justify-content: center; /* Mengatur posisi ke tengah */
-    gap: 1rem; /* Jarak antar ikon */
+    gap: 1rem;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.social-icon {
+    width: 30px;
+    height: auto;
 }

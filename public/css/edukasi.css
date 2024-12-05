@@ -1,3 +1,18 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk body */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #e0f7fa, #f4f4f4); /* Gradien lembut */
+    color: #333;
+}
+
 .edukasi-section {
     padding: 40px;
     background: #e8f5e9;
