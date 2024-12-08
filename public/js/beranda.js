@@ -50,3 +50,52 @@ let currentIndex = 0;
             });
         });
     });
+
+// Script untuk mengatur testimoni
+let currentTestimonialIndex = 0;
+let testimonialTimer;
+
+function moveTestimonials(step) {
+    const testimonialsWrapper = document.querySelector('.testimoni-container');
+    const testimonials = document.querySelectorAll('.testimoni-item');
+    const totalTestimonials = testimonials.length;
+
+    // Hitung indeks testimoni baru
+    currentTestimonialIndex = (currentTestimonialIndex + step + totalTestimonials) % totalTestimonials;
+
+    // Geser wrapper ke testimoni yang sesuai
+    testimonialsWrapper.style.transform = `translateX(-${currentTestimonialIndex * 100}%)`;
+}
+
+function autoSlideTestimonials() {
+    moveTestimonials(1); // Pindah ke testimoni berikutnya
+}
+
+function startAutoSlideTestimonials() {
+    testimonialTimer = setInterval(autoSlideTestimonials, 3000); // 3 detik
+}
+
+function stopAutoSlideTestimonials() {
+    clearInterval(testimonialTimer); // Hentikan pergerakan otomatis
+}
+
+// Inisialisasi testimoni pertama dan autoplay
+document.addEventListener('DOMContentLoaded', () => {
+    moveTestimonials(0);
+    startAutoSlideTestimonials();
+
+    // Tambahkan event listener untuk menghentikan slide otomatis saat tombol ditekan
+    const testimonialNavigationButtons = document.querySelectorAll('.prev, .next'); // Ganti dengan selector yang sesuai jika ada
+    testimonialNavigationButtons.forEach(button => {
+        button.addEventListener('click', stopAutoSlideTestimonials);
+    });
+
+    // Mulai kembali autoplay setelah beberapa detik jika slideshow dihentikan manual
+    testimonialNavigationButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            setTimeout(startAutoSlideTestimonials, 5000); // Mulai lagi setelah 5 detik
+        });
+    });
+});
+
+
