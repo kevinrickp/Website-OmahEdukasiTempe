@@ -19,5 +19,3 @@ class BlogSeeder extends Seeder
         // Tambahkan lebih banyak data contoh jika diperlukan
     }
 }
-
-jancok memek
